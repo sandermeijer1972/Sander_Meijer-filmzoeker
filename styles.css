@@ -33,7 +33,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     padding: 0;
-    margin: 10px;
+    margin: 10px;    
 }
 
 .results li {
@@ -51,5 +51,5 @@ footer {
     color: yellow;
     font-size: 12px;
     text-align: right;
-    margin: 20px;
+    margin: 30px;
 }
