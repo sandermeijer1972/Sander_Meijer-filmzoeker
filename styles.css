@@ -1,0 +1,55 @@
+body {
+    background-color: blue;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: yellow;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navigatie {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: yellow;
+    font-size: 18px;
+    padding: 0;
+}
+
+.navigatie li {
+    padding: 10px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.results li {
+    border: 1px solid yellow;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+img {
+    width: 250px;
+}
+
+footer {
+    color: yellow;
+    font-size: 12px;
+    text-align: right;
+    margin: 20px;
+}
