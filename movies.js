@@ -89,7 +89,7 @@ Title: "Stephen King's The Shining",
 Year: "1980",
 imdbID: "tt0081505",
 Type: "movie",
-Poster: "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+Poster: "https://m.media-amazon.com/images/M/MV5BMDBlMjUwNTktODY3NS00NTAzLWI5NzUtYjYyYzYyOWY1Njg5XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
 },
 {
 Title: "The Muppets",
