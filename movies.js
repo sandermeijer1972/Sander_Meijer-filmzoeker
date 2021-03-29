@@ -15,7 +15,7 @@ Type: "movie",
 Poster: "https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
 },
 {
-Title: "Die hard",
+Title: "Die Hard",
 Year: "1988",
 imdbID: "tt0095016",
 Type: "movie",
@@ -99,7 +99,7 @@ Type: "movie",
 Poster: "https://m.media-amazon.com/images/M/MV5BMjE0MTM4NTc3NF5BMl5BanBnXkFtZTcwMjYzOTIxNg@@._V1_SX300.jpg"
 },
 {
-Title: "Stand by Me",
+Title: "Stephen King's Stand by Me",
 Year: "1986",
 imdbID: "tt0092005",
 Type: "movie",
