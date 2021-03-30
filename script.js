@@ -23,6 +23,15 @@ addMovies = function(array) {
     };
 };
 
+//bij het openen van de pagina start je met het toevoegen van alle films 
+addMovies(movies);
+
+//de filters voor de andere arrays
+const dieHardMovies = movies.filter(i => i.Title.includes('Die Hard'));
+const harryPotterMovies = movies.filter(i => i.Title.includes('Harry Potter'));
+const muppetMovies = movies.filter(i => i.Title.includes('Muppet'));
+const stephenKingMovies = movies.filter(i => i.Title.includes('Stephen King'));
+const newestMovies = movies.filter(i => parseInt(i.Year) > 2010);
 
 //voordat je een bepaalde lijst gaat krijgen, verwijder je alle films
 removeMovies = function() {
@@ -35,37 +44,43 @@ removeMovies = function() {
     };
 };
 
-const dieHardMovies = movies.filter(i => i.Title.includes('Die Hard'));
-const harryPotterMovies = movies.filter(i => i.Title.includes('Harry Potter'));
-const muppetMovies = movies.filter(i => i.Title.includes('Muppet'));
-const stephenKingMovies = movies.filter(i => i.Title.includes('Stephen King'));
-const newestMovies = movies.filter(i => parseInt(i.Year) > 2010);
-
-const radios = document.querySelectorAll('input[type=radio][name="what-movie"]');
-radios.forEach(radio => radio.addEventListener('change', () => (radio.value)));
-
-switch (radios.value) {
-    case 'newest':
-        removeMovies();
-        addMovies(newestMovies);
-        break;
-    case 'die-hard':
-        removeMovies();        
-        addMovies(dieHardMovies);
-        break;
-    case 'harry-potter':
-        removeMovies();        
-        addMovies(harryPotterMovies);
-        break;
-    case 'muppets':
-        removeMovies();        
-        addMovies(muppetMovies);
-        break;
-    case 'stephen-king':
-        removeMovies();        
-        addMovies(stephenKingMovies);
-        break;
-    default:        
-        addMovies(movies);
+//zet de gekozen gefilterde array op de pagina
+const runSwitch = (expr) => {
+    switch (expr) {
+        //maak eerst de huidige lijst op de pagina leeg, dan de nieuwe toevoegen
+        case 'newest':
+            removeMovies();
+            addMovies(newestMovies);
+            break;
+        case 'die-hard':
+            removeMovies();        
+            addMovies(dieHardMovies);
+            break;
+        case 'harry-potter':
+            removeMovies();        
+            addMovies(harryPotterMovies);
+            break;
+        case 'muppets':
+            removeMovies();        
+            addMovies(muppetMovies);
+            break;
+        case 'stephen-king':
+            removeMovies();        
+            addMovies(stephenKingMovies);
+            break;
+        default:        
+            addMovies(movies);
+    };
 };
+
+//zorg dat aanvinken van de radiobuttons iets gaat doen
+const radioButtons = document.querySelectorAll('input[type=radio][name="what-movie"]');
+radioButtons.forEach(i => i.addEventListener('change', () => {
+    //check welke radiobutton aangevinkt is
+    console.log(i.value);
+    const expr = i.value;
+    //bepaal welke array moet worden gebruikt
+    runSwitch(expr);
+}));
+
 
